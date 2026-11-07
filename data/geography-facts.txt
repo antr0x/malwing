@@ -1,0 +1,50 @@
+Quale fiume attraversa Roma?|Tevere
+Quale fiume attraversa Firenze?|Arno
+Quale fiume attraversa Parigi?|Senna
+Quale fiume attraversa Londra?|Tamigi
+Quale fiume attraversa Budapest?|Danubio
+Quale fiume attraversa Vienna?|Danubio
+Quale fiume attraversa il Cairo?|Nilo
+Quale fiume attraversa Lisbona?|Tago
+Quale fiume attraversa Praga?|Moldava
+Quale fiume attraversa Varsavia?|Vistola
+Qual è il fiume più lungo interamente in territorio italiano?|Po
+Quale catena montuosa percorre la penisola italiana?|Appennini
+Quale catena montuosa separa la Francia dalla Spagna?|Pirenei
+Quale catena montuosa percorre il margine occidentale dell'America meridionale?|Ande
+Quale catena montuosa comprende l'Everest?|Himalaya
+Quale monte è la vetta più alta dell'Africa?|Kilimangiaro
+Quale vetta delle Ande è la più alta delle Americhe?|Aconcagua
+Quale vetta è la più alta del Giappone?|Monte Fuji
+Quale vulcano attivo si trova nella Sicilia orientale vicino a Catania?|Etna
+Quale vulcano domina il golfo di Napoli?|Vesuvio
+Quale mare bagna la costa orientale dell'Italia?|Mare Adriatico
+Quale mare si trova tra Italia occidentale, Sardegna e Sicilia?|Mar Tirreno
+Quale mare bagna la costa meridionale della Calabria?|Mar Ionio
+Quale mare si trova a nord della Corsica e a sud della Liguria?|Mar Ligure
+Quale oceano separa le Americhe dall'Europa e dall'Africa?|Oceano Atlantico
+Quale oceano è il più esteso della Terra?|Oceano Pacifico
+Quale oceano bagna le coste orientali dell'Africa?|Oceano Indiano
+Quale stretto collega il Mediterraneo all'oceano Atlantico?|Stretto di Gibilterra
+Quale stretto separa l'Alaska dall'Asia?|Stretto di Bering
+Quale canale artificiale collega Mediterraneo e mar Rosso?|Canale di Suez
+Quale canale artificiale collega Atlantico e Pacifico nell'America centrale?|Canale di Panama
+Quale deserto occupa gran parte dell'Africa settentrionale?|Sahara
+Quale deserto si estende tra Mongolia e Cina settentrionale?|Gobi
+Quale deserto costiero si trova nel Cile settentrionale?|Atacama
+Quale foresta tropicale si estende nel bacino del Rio delle Amazzoni?|Foresta amazzonica
+Quale grande isola a sud-est dell'Africa è separata dal continente dal canale di Mozambico?|Madagascar
+Qual è l'isola italiana più grande per superficie?|Sicilia
+Qual è la seconda isola italiana per superficie?|Sardegna
+Quale isola è separata dalla Sardegna dalle Bocche di Bonifacio?|Corsica
+Quale continente circonda il Polo Sud?|Antartide
+Quale linea immaginaria divide la Terra in emisfero boreale e australe?|Equatore
+Quale meridiano è usato convenzionalmente come meridiano zero?|Meridiano di Greenwich
+Come si chiama la distanza angolare di un punto dall'equatore?|Latitudine
+Come si chiama la distanza angolare di un punto dal meridiano di riferimento?|Longitudine
+Qual è il capoluogo della Lombardia?|Milano
+Qual è il capoluogo del Piemonte?|Torino
+Qual è il capoluogo della Toscana?|Firenze
+Qual è il capoluogo della Campania?|Napoli
+Qual è il capoluogo della Puglia?|Bari
+Qual è il capoluogo della Liguria?|Genova

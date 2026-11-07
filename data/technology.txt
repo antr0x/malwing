@@ -1,0 +1,50 @@
+Quale componente del computer esegue le istruzioni dei programmi?|CPU
+Quale memoria di lavoro del computer perde normalmente i dati quando manca l'alimentazione?|RAM
+Quale periferica permette di digitare testo mediante tasti?|Tastiera
+Quale periferica permette di acquisire un documento cartaceo come immagine digitale?|Scanner
+Quale periferica produce copie dei documenti su carta?|Stampante
+Quale dispositivo visualizza le immagini prodotte da un computer?|Monitor
+Quale dispositivo di puntamento si sposta normalmente su una superficie piana?|Mouse
+Quale dispositivo converte suoni in segnali utilizzabili da un computer?|Microfono
+Quale componente gestisce in modo specializzato l'elaborazione grafica?|GPU
+Quale supporto di archiviazione usa memoria flash e non dischi magnetici rotanti?|SSD
+Come si chiama il software che gestisce hardware, processi e risorse fondamentali del computer?|Sistema operativo
+Come si chiama il programma usato per visitare pagine web?|Browser
+Come si chiama il software che trova informazioni sul web a partire da una ricerca?|Motore di ricerca
+Quale sigla indica un indirizzo di risorsa sul web?|URL
+Quale sigla indica la versione di HTTP che protegge la comunicazione tramite TLS?|HTTPS
+Quale servizio traduce normalmente i nomi di dominio in indirizzi IP?|DNS
+Quale sigla indica una rete locale di computer?|LAN
+Quale termine indica comunemente una rete locale senza fili secondo gli standard IEEE 802.11?|Wi-Fi
+Quale tecnologia wireless viene spesso usata per collegare cuffie e dispositivi a breve distanza?|Bluetooth
+Quale dispositivo instrada pacchetti di dati tra reti diverse?|Router
+Come si chiama una copia dei dati destinata al ripristino in caso di perdita?|Backup
+Come si chiama la trasformazione dei dati per renderli leggibili solo a chi possiede la chiave appropriata?|Cifratura
+Quale tecnica fraudolenta tenta di ottenere credenziali fingendosi un soggetto affidabile?|Phishing
+Come si chiama genericamente un software creato per danneggiare o compromettere sistemi informatici?|Malware
+Quale tipo di malware blocca o cifra i dati e richiede un riscatto?|Ransomware
+Quale sistema filtra il traffico di rete secondo regole definite?|Firewall
+Come si chiama una parola o sequenza segreta utilizzata per autenticarsi?|Password
+Quale sigla inglese indica un codice temporaneo valido per un solo utilizzo?|OTP
+Quale termine indica l'accesso che richiede due fattori di autenticazione distinti?|Autenticazione a due fattori
+Come si chiama un aggiornamento che corregge un difetto di un programma?|Patch
+Quale unità elementare dell'informazione può assumere i valori zero o uno?|Bit
+Quanti bit compongono un byte?|8
+Quale sistema di numerazione usa soltanto le cifre 0 e 1?|Sistema binario
+Quale estensione è tipica di un file di testo semplice?|TXT
+Quale formato di documento portabile conserva normalmente l'impaginazione tra dispositivi?|PDF
+Quale estensione è tipica di un foglio di calcolo moderno di Microsoft Excel?|XLSX
+Quale estensione è tipica di un documento moderno di Microsoft Word?|DOCX
+Quale formato usa comunemente valori separati da virgole o altri delimitatori per dati tabellari?|CSV
+Quale formato testuale rappresenta dati mediante oggetti e array ed è molto usato sul web?|JSON
+Quale linguaggio di marcatura definisce la struttura di una pagina web?|HTML
+Quale linguaggio descrive lo stile e l'aspetto delle pagine web?|CSS
+Quale linguaggio viene eseguito comunemente dai browser per rendere interattive le pagine?|JavaScript
+Come si chiama un archivio organizzato di dati consultabili e aggiornabili?|Database
+Quale linguaggio è comunemente usato per interrogare database relazionali?|SQL
+Come si chiama la fase di ricerca e correzione degli errori in un programma?|Debugging
+Come si chiama un insieme finito di istruzioni per risolvere un problema?|Algoritmo
+Come si chiama un errore nel codice di un programma?|Bug
+Quale termine indica il diritto esclusivo su un'opera dell'ingegno, secondo le condizioni previste dalla legge?|Diritto d'autore
+Quale licenza di software permette l'uso, lo studio, la modifica e la redistribuzione del codice secondo le proprie condizioni?|Licenza libera
+Come si chiama l'insieme di servizi informatici forniti tramite risorse remote accessibili in rete?|Cloud computing

@@ -1,0 +1,75 @@
+Qual è il plurale di città?|Città
+Qual è il plurale di università?|Università
+Qual è il plurale di crisi?|Crisi
+Qual è il plurale di analisi?|Analisi
+Qual è il plurale di caffè?|Caffè
+Qual è il plurale di virtù?|Virtù
+Qual è il plurale di re?|Re
+Qual è il plurale di uomo?|Uomini
+Qual è il plurale di uovo?|Uova
+Qual è il plurale di bue?|Buoi
+Qual è il plurale di dio?|Dèi
+Qual è il plurale di paio?|Paia
+Qual è il plurale di dito riferito all'insieme delle dita di una mano?|Dita
+Qual è il plurale di braccio riferito agli arti superiori del corpo?|Braccia
+Qual è il plurale di osso riferito all'insieme dello scheletro?|Ossa
+Qual è il plurale di ginocchio comunemente usato per le due articolazioni di una persona?|Ginocchia
+Qual è il plurale di tempio?|Templi
+Qual è il plurale di occhio?|Occhi
+Qual è il plurale di orecchio normalmente usato per le due parti del corpo?|Orecchie
+Qual è il plurale di problema?|Problemi
+Qual è il plurale di programma?|Programmi
+Qual è il plurale di poeta?|Poeti
+Qual è il plurale di tema?|Temi
+Qual è il plurale di clima?|Climi
+Qual è il plurale di schema?|Schemi
+Qual è il plurale di sistema?|Sistemi
+Qual è il plurale di collega riferito a un gruppo di uomini?|Colleghi
+Qual è il plurale di amica?|Amiche
+Qual è il plurale di banca?|Banche
+Qual è il plurale di barca?|Barche
+Qual è il plurale di spiaggia?|Spiagge
+Qual è il plurale di pioggia?|Piogge
+Qual è il plurale di provincia?|Province
+Qual è il plurale di arancia?|Arance
+Qual è il plurale di ciliegia?|Ciliegie
+Qual è il plurale di valigia?|Valigie
+Qual è il plurale di camicia?|Camicie
+Qual è il plurale di farmacia?|Farmacie
+Qual è il plurale di specie?|Specie
+Qual è il plurale di superficie?|Superfici
+Qual è il plurale di sindaco?|Sindaci
+Qual è il plurale di medico?|Medici
+Qual è il plurale di dialogo?|Dialoghi
+Qual è il plurale di catalogo?|Cataloghi
+Qual è il plurale di albergo?|Alberghi
+Qual è il plurale di lago?|Laghi
+Qual è il plurale di fungo?|Funghi
+Qual è il plurale di fianco?|Fianchi
+Qual è il plurale di banco?|Banchi
+Qual è il plurale di arco?|Archi
+Nella frase «Il gatto dorme», qual è il soggetto?|Il gatto
+Nella frase «Maria legge un libro», qual è il complemento oggetto?|Un libro
+Nella frase «Luca corre velocemente», quale parola è un avverbio?|Velocemente
+Nella frase «La penna rossa è mia», quale parola è un aggettivo qualificativo?|Rossa
+Quale parte del discorso è «e» nella frase «pane e acqua»?|Congiunzione
+Quale parte del discorso è «di» nella frase «il libro di Anna»?|Preposizione
+Quale parte del discorso è «il» davanti a un nome maschile singolare?|Articolo determinativo
+Qual è l'infinito della forma verbale «andavamo»?|Andare
+Qual è l'infinito della forma verbale «scrissero»?|Scrivere
+Qual è l'infinito della forma verbale «vidi»?|Vedere
+Qual è il participio passato di prendere?|Preso
+Qual è il participio passato di leggere?|Letto
+Qual è il participio passato di aprire?|Aperto
+Qual è il participio passato di chiudere?|Chiuso
+Qual è il participio passato di dire?|Detto
+Qual è il participio passato di fare?|Fatto
+Qual è il participio passato di scegliere?|Scelto
+Qual è il participio passato di rispondere?|Risposto
+Qual è il gerundio presente di essere?|Essendo
+Qual è il gerundio presente di avere?|Avendo
+Quale tempo dell'indicativo è «avevo studiato»?|Trapassato prossimo
+Quale tempo dell'indicativo è «avrò finito»?|Futuro anteriore
+Quale modo verbale è «vorrei»?|Condizionale
+Quale modo verbale è «che io sia»?|Congiuntivo
+Quale segno di punteggiatura chiude normalmente una domanda diretta?|Punto interrogativo

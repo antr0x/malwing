@@ -1,0 +1,100 @@
+La Divina Commedia|Dante Alighieri
+Il Decameron|Giovanni Boccaccio
+Il Canzoniere|Francesco Petrarca
+L'Orlando furioso|Ludovico Ariosto
+La Gerusalemme liberata|Torquato Tasso
+Il Principe|Niccolò Machiavelli
+La locandiera|Carlo Goldoni
+Dei delitti e delle pene|Cesare Beccaria
+Il Giorno|Giuseppe Parini
+Dei Sepolcri|Ugo Foscolo
+Le ultime lettere di Jacopo Ortis|Ugo Foscolo
+I promessi sposi|Alessandro Manzoni
+I Canti|Giacomo Leopardi
+Le operette morali|Giacomo Leopardi
+I Malavoglia|Giovanni Verga
+Mastro-don Gesualdo|Giovanni Verga
+Il piacere|Gabriele D'Annunzio
+Myricae|Giovanni Pascoli
+La coscienza di Zeno|Italo Svevo
+Senilità|Italo Svevo
+Il fu Mattia Pascal|Luigi Pirandello
+Sei personaggi in cerca d'autore|Luigi Pirandello
+Uno, nessuno e centomila|Luigi Pirandello
+Ossi di seppia|Eugenio Montale
+L'allegria|Giuseppe Ungaretti
+Il deserto dei Tartari|Dino Buzzati
+Il Gattopardo|Giuseppe Tomasi di Lampedusa
+Se questo è un uomo|Primo Levi
+La tregua|Primo Levi
+Il sentiero dei nidi di ragno|Italo Calvino
+Il barone rampante|Italo Calvino
+Le città invisibili|Italo Calvino
+Il nome della rosa|Umberto Eco
+La Storia|Elsa Morante
+L'isola di Arturo|Elsa Morante
+Lessico famigliare|Natalia Ginzburg
+La luna e i falò|Cesare Pavese
+La casa in collina|Cesare Pavese
+Una questione privata|Beppe Fenoglio
+Il giorno della civetta|Leonardo Sciascia
+La ciociara|Alberto Moravia
+Le avventure di Pinocchio|Carlo Collodi
+Cuore|Edmondo De Amicis
+Il giornalino di Gian Burrasca|Vamba
+Il fuoco|Gabriele D'Annunzio
+L'Iliade|Omero
+L'Odissea|Omero
+L'Eneide|Virgilio
+Le Metamorfosi|Ovidio
+Il De bello Gallico|Giulio Cesare
+La Repubblica|Platone
+La Poetica|Aristotele
+Le Confessioni|Agostino d'Ippona
+Il Don Chisciotte|Miguel de Cervantes
+L'Amleto|William Shakespeare
+Il Macbeth|William Shakespeare
+Il Romeo e Giulietta|William Shakespeare
+Il Paradiso perduto|John Milton
+I viaggi di Gulliver|Jonathan Swift
+Il Robinson Crusoe|Daniel Defoe
+Il Candido|Voltaire
+L'Emilio|Jean-Jacques Rousseau
+Il Faust|Johann Wolfgang Goethe
+Orgoglio e pregiudizio|Jane Austen
+Frankenstein|Mary Shelley
+Il rosso e il nero|Stendhal
+Il papà Goriot|Honoré de Balzac
+Il conte di Montecristo|Alexandre Dumas
+I tre moschettieri|Alexandre Dumas
+I miserabili|Victor Hugo
+Madame Bovary|Gustave Flaubert
+Moby Dick|Herman Melville
+La lettera scarlatta|Nathaniel Hawthorne
+Le avventure di Tom Sawyer|Mark Twain
+Delitto e castigo|Fëdor Dostoevskij
+I fratelli Karamazov|Fëdor Dostoevskij
+Guerra e pace|Lev Tolstoj
+Anna Karenina|Lev Tolstoj
+Il ritratto di Dorian Gray|Oscar Wilde
+Dracula|Bram Stoker
+Il giro del mondo in ottanta giorni|Jules Verne
+Ventimila leghe sotto i mari|Jules Verne
+La metamorfosi|Franz Kafka
+Il processo|Franz Kafka
+Alla ricerca del tempo perduto|Marcel Proust
+L'Ulisse|James Joyce
+La signora Dalloway|Virginia Woolf
+Il grande Gatsby|Francis Scott Fitzgerald
+Il vecchio e il mare|Ernest Hemingway
+La fattoria degli animali|George Orwell
+1984|George Orwell
+Il piccolo principe|Antoine de Saint-Exupéry
+Lo straniero|Albert Camus
+Cent'anni di solitudine|Gabriel García Márquez
+Il signore degli anelli|J. R. R. Tolkien
+Lo Hobbit|J. R. R. Tolkien
+Il giovane Holden|J. D. Salinger
+Il cacciatore di aquiloni|Khaled Hosseini
+Il racconto dell'ancella|Margaret Atwood
+Harry Potter e la pietra filosofale|J. K. Rowling

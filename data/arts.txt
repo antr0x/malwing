@@ -1,0 +1,50 @@
+Chi dipinse la Gioconda?|Leonardo da Vinci
+Chi dipinse la Nascita di Venere conservata agli Uffizi?|Sandro Botticelli
+Chi dipinse la Scuola di Atene nelle Stanze Vaticane?|Raffaello Sanzio
+Chi dipinse la volta della Cappella Sistina?|Michelangelo Buonarroti
+Chi scolpì il David marmoreo conservato alla Galleria dell'Accademia di Firenze?|Michelangelo Buonarroti
+Chi progettò la cupola di Santa Maria del Fiore a Firenze?|Filippo Brunelleschi
+Chi dipinse la Vocazione di san Matteo in San Luigi dei Francesi a Roma?|Caravaggio
+Chi scolpì l'Estasi di santa Teresa nella chiesa di Santa Maria della Vittoria?|Gian Lorenzo Bernini
+Chi dipinse La ronda di notte?|Rembrandt
+Chi dipinse La ragazza con l'orecchino di perla?|Johannes Vermeer
+Chi dipinse Las Meninas?|Diego Velázquez
+Chi dipinse Il 3 maggio 1808?|Francisco Goya
+Chi dipinse La libertà che guida il popolo?|Eugène Delacroix
+Chi dipinse Impressione, levar del sole?|Claude Monet
+Chi dipinse Le déjeuner des canotiers, noto come La colazione dei canottieri?|Pierre-Auguste Renoir
+Chi dipinse La notte stellata del 1889?|Vincent van Gogh
+Chi dipinse L'urlo?|Edvard Munch
+Chi dipinse Guernica?|Pablo Picasso
+Chi dipinse La persistenza della memoria?|Salvador Dalí
+Chi dipinse Il bacio del 1907-1908?|Gustav Klimt
+Chi dipinse La primavera conservata agli Uffizi?|Sandro Botticelli
+Chi dipinse il ciclo di affreschi della Cappella degli Scrovegni?|Giotto
+Chi dipinse La flagellazione di Cristo conservata a Urbino?|Piero della Francesca
+Chi dipinse La camera degli sposi nel Palazzo Ducale di Mantova?|Andrea Mantegna
+Chi dipinse La Venere di Urbino?|Tiziano
+Chi compose Le quattro stagioni?|Antonio Vivaldi
+Chi compose Il flauto magico?|Wolfgang Amadeus Mozart
+Chi compose la Nona sinfonia con l'Inno alla gioia?|Ludwig van Beethoven
+Chi compose La traviata?|Giuseppe Verdi
+Chi compose Aida?|Giuseppe Verdi
+Chi compose Tosca?|Giacomo Puccini
+Chi compose La bohème?|Giacomo Puccini
+Chi compose Il barbiere di Siviglia rappresentato nel 1816?|Gioachino Rossini
+Chi compose la Norma?|Vincenzo Bellini
+Chi compose Lucia di Lammermoor?|Gaetano Donizetti
+Chi compose Carmen?|Georges Bizet
+Chi compose Il lago dei cigni?|Pëtr Il'ič Čajkovskij
+Chi compose Lo schiaccianoci?|Pëtr Il'ič Čajkovskij
+Chi compose L'uccello di fuoco?|Igor Stravinskij
+Chi compose Boléro?|Maurice Ravel
+Chi compose il poema sinfonico La Moldava?|Bedřich Smetana
+Chi compose Il bel Danubio blu?|Johann Strauss figlio
+Chi compose la celebre Toccata e fuga in re minore BWV 565, secondo l'attribuzione tradizionale?|Johann Sebastian Bach
+Chi compose il ciclo pianistico Quadri di un'esposizione?|Modest Musorgskij
+Chi compose l'opera L'anello del Nibelungo, articolata in quattro drammi?|Richard Wagner
+Quante corde ha normalmente un violino?|4
+Quante corde ha normalmente una chitarra classica?|6
+Quale strumento musicale ha tasti bianchi e neri e corde percosse da martelletti?|Pianoforte
+Quale strumento a fiato in ottone possiede tipicamente una coulisse?|Trombone
+Quale figura musicale vale normalmente quattro semiminime?|Semibreve
