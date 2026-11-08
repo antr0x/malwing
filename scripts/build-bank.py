@@ -5,6 +5,7 @@ This script is an offline build step; no question generation service is required
 from pathlib import Path
 from fractions import Fraction
 import csv, hashlib, json, random, re, unicodedata
+from answer_types import answer_type, distractors
 ROOT=Path(__file__).resolve().parents[1]
 rng=random.Random(5698001)
 
@@ -94,22 +95,16 @@ for s,category in enumerate(categories):
         assert canonical not in all_norms,('duplicate question',q)
         all_norms.add(canonical)
         assert a and '?' in q
-        if re.fullmatch(r'\d+',a):
-            n=int(a);wrong=[str(n+1),str(n+7)]
-        elif re.fullmatch(r'\d+/\d+',a):
-            f=Fraction(a);wrong=[str(f+1),str(f+2)]
-        elif topic=='cronologia':
-            other=[event for event,year in dates if ('«'+event+'»') in q and norm(event)!=norm(a)];assert len(other)==1;wrong=other*2
-        else:
-            wrong=list(dict.fromkeys(x['answer'] for x in category if x['topic']==topic and norm(x['answer'])!=norm(a)))
+        wrong=distractors(row,[r for category in categories for r in category],rng)
         assert len(wrong)>=2,(q,wrong)
         rng.shuffle(wrong)
         a_sentence=a if a.endswith(('.',':','!','?')) else a+'.'
         low=a[0].lower()+a[1:] if a.startswith(('Il ','La ','Lo ','Gli ','Le ','Un ','Una ','L’','L\'')) else a
         alternative=(f'Il simbolo è {a}.' if topic=='chimica' else f'L’autore è {a}.' if topic=='letteratura' else f'La capitale è {a}.' if topic=='capitali' else f'È {low}.')
-        out.append({'id':'s'+str(s+1)+'-'+hashlib.sha256(canonical.encode()).hexdigest()[:12],'topic':topic,'q':[q,a_sentence,(f'Nel {a}.' if topic=='date' else a),(f'L’evento risale al {a}.' if topic=='date' else alternative),wrong[0]+'.',wrong[1]+'.']})
+        out.append({'id':'s'+str(s+1)+'-'+hashlib.sha256(canonical.encode()).hexdigest()[:12],'topic':topic,'answer_type':answer_type(row),'q':[q,a_sentence,(f'Nel {a}.' if topic=='date' else a),(f'L’evento risale al {a}.' if topic=='date' else alternative),wrong[0]+'.',wrong[1]+'.']})
     compiled.append(out)
 asset='/* Italian question bank. Sources and licensing: data/SOURCES.md. */\nwindow.MALWING_BANK='+json.dumps(compiled,ensure_ascii=False,separators=(',',':'))+';\n'
 (ROOT/'question-bank.js').write_text(asset)
 print('Validated category sizes:',[len(x) for x in compiled])
 print('Distinct question IDs:',len({x['id'] for c in compiled for x in c}))
+
