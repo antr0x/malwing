@@ -56,10 +56,60 @@ function drawQuestions(commit=false){
  if(commit){questionHistory=history;try{localStorage.setItem(DECK_KEY,JSON.stringify(history))}catch{}}
  return selection;
 }
-function naturalForms(q){const lower=q[1].replace(/^(Il |La |Lo |Gli |Le |Un |Una |In |L’)/,x=>x.toLowerCase());if(/^\d{4}\.$/.test(q[1])&&/anno/.test(q[0])){const y=q[1].slice(0,-1);return [...new Set([q[2],q[3],q[1],`Fu nel ${y}.`,`L’anno è ${y}.`])] }return [...new Set([q[2],q[3],q[1],`Direi ${lower}`,`Credo sia ${lower}`])]}
-function makeAnswers(questions){return questions.map(q=>{const used=new Set();return names.map((_,i)=>{const good=Math.random()<[.82,.71,.89,.68][i],pool=good?naturalForms(q):[q[4],q[5],`Credo sia ${q[4].replace(/^(Il |La |Lo |Gli |Le |In |L’)/,x=>x.toLowerCase())}`,`Forse ${q[5].replace(/^(Il |La |Lo |Gli |Le |In |L’)/,x=>x.toLowerCase())}`,`Direi ${q[4].replace(/^(Il |La |Lo |Gli |Le |In |L’)/,x=>x.toLowerCase())}`];let text=shuffled(pool).find(x=>!used.has(norm(x))||/^\d+[.,]?$/.test(x));if(!text)text=pool[0];used.add(norm(text));return{text,correct:good,delay:rand(28000+i*6000,145000+i*11000),missing:Math.random()<.045,edited:false,override:null,grade:null}})})}
+function formalForms(q,good=true){
+ const question=q[0].replace(/\?$/,'').trim(),answers=good?[q[1]]:[q[4],q[5]],forms=[];
+ const banned=/^(?:direi|credo(?: sia)?|forse|penso(?: sia| che)?|indico\s*:|secondo me|la risposta è)\b/i;
+ const sentence=s=>String(s).trim().replace(/[.!?]+$/,'')+'.';
+ const lower=s=>s.replace(/^(Il |La |Lo |Gli |Le |Un |Una |L’|L')/,x=>x.toLowerCase());
+ const upper=s=>s.charAt(0).toUpperCase()+s.slice(1);
+ for(const raw of answers){
+  const a=String(raw).replace(/[.!?]+$/,'').trim(),v=lower(a);
+  forms.push(sentence(a));
+  if(/^\d+$/.test(a)&&!/^In quale anno/i.test(question)&&! /^(?:Quanto |A quanti |Qual è (?:il risultato|la media|il numero successivo|la radice))/i.test(question))continue;
+  if(/^In quale anno/i.test(question))forms.push(`Nel ${a}.`,`L’evento avvenne nel ${a}.`,`L’evento risale al ${a}.`);
+  else if(/^Quale evento avvenne prima/i.test(question))forms.push(`${a} avvenne prima.`,`${a} precede l’altro evento.`,`Il primo dei due eventi fu: ${v}.`);
+  else if(/simbolo chimico/i.test(question))forms.push(`Il simbolo chimico è ${a}.`,`Il simbolo è ${a}.`,`Si scrive ${a}.`);
+  else if(/^Qual è la capitale del Paese/i.test(question))forms.push(`La capitale è ${a}.`,`${a} è la capitale.`,`La città capitale è ${a}.`);
+  else if(/^In quale continente/i.test(question))forms.push(`Il Paese si trova in ${a}.`,`Il continente è l’${a}.`,`Il territorio appartiene all’${a}.`);
+  else if(/^(?:Quanto |A quanti |Qual è (?:il risultato|la media|il numero successivo|la radice))/i.test(question))forms.push(`Il risultato è ${a}.`,`Il calcolo dà ${a}.`,`Si ottiene ${a}.`);
+  else if(/^Chi (?:è l.autore|scrisse|compose|dipinse|scolpì|progettò|ha scritto)/i.test(question)){
+   const role=/dipinse/.test(question)?'dipinto':/scolpì/.test(question)?'scultura':/progettò/.test(question)?'progetto':/compose/.test(question)?'composizione':'opera';
+   const noun={dipinto:'Il dipinto',scultura:'La scultura',progetto:'Il progetto',composizione:'La composizione',opera:'L’opera'}[role];
+   forms.push(`L’autore è ${a}.`,`${noun} è di ${a}.`,`${a} ${question.replace(/^Chi /,'')}.`);
+  }else if(/^Chi (?:fu|è) /i.test(question)){
+   const m=question.match(/^Chi (fu|è) (.+)$/i);forms.push(`${a} ${m[1]} ${m[2]}.`,`${upper(m[1])} ${a} ${m[2]}.`,`${upper(m[2])} ${m[1]} ${a}.`);
+  }else if(/qual è /i.test(question)){
+   const subject=question.match(/qual è (.+)$/i)[1];forms.push(`${upper(subject)} è ${v}.`,`${a} è ${subject}.`,`${upper(subject)}: ${v}.`);
+  }else if(/^Come si chiam(?:a|ano|ava|avano) /i.test(question)){
+   const m=question.match(/^Come (si chiam(?:avano|ano|ava|a)) (.+)$/i);forms.push(`${upper(m[2])} ${m[1]} ${v}.`,`${upper(m[1])} ${v} ${m[2]}.`,`${upper(m[2])}: ${v}.`);
+  }else{
+   const body=question.replace(/^.*?, qual[ei] /i,'').replace(/^(?:A |In )?Qual[ei] /i,'');const verb=[...body.matchAll(/(?<!\S)(?:è|sono|era|erano|fu|furono|ha|hanno|ebbe|concesse|fece|scrisse|attraversò|attraversa|guidò|morì|fondò|conquistò|governò|regnò|pubblicò|sconfisse|incontrò|raggiunse|completò|divenne|succedette|divise|promosse|rifiutò|propose|emanò|avviò|formulò|sviluppò|pronunciò|trascorse|abolì|combatté|difendeva|seguiva|misura|misurano|contiene|contengono|costituisce|costituiscono|produce|producono|possiede|raccoglie|permette|permettono|indica|indicano|significa|attribuisce|consiste|concentra|comprende|comprendono|svolgono|filtrano|lega|portano|riportano|separa|separano|collega|collegano|circonda|bagna|percorre|occupa|protegge|forma|riduce|contribuisce|vibra|accelera|afferma|descrive|usa|usano|esegue|perde|visualizza|converte|gestisce|traduce|instrada|tenta|blocca|filtra|rappresenta|distingue|ritorna|si trova|si trovano|si estende|si chiamava|appartengono|avviene|avvenne|dà|bandì|vinse|proclamò|riconquistò|riuniva|rivalutò|favoriva|animò|introdusse|ricorda|delimita|conserva|sostituisce|consente|viene|rende|trasporta|distribuisce|pompa|spinge|porta|regola|trasformano|si appaia|si oppone|caratterizza|chiude|si sposta|può|definisce|vale|domina|compongono|si dimise|fa|divide)(?!\S)/ig)].find(m=>m.index>0);
+   const label=verb?body.slice(0,verb.index).trim():body.split(' ').slice(0,3).join(' ');
+   forms.push(`${upper(label)}: ${v}.`);
+   const plural=/^Quali /i.test(question),head=label.split(' ')[0].toLowerCase();
+   const feminine=new Set(['forma','regina','donna','dinastia','famiglia','figlia','sovrana','infermiera','suffragetta','politica','religione','lingua','tassa','dottrina','idea','consultazione','trasformazione','classe','organizzazione','espressione','parola','unità','base','struttura','membrana','cavità','arteria','forza','grandezza','particella','lente','sostanza','stella','galassia','teoria','parte','scienza','tecnica','periferica','memoria','tecnologia','licenza','figura','catena','vetta','foresta','isola','linea']);
+   const article=plural?(head==='molecole'?'Le ':/^[aeiou]/.test(head)?'Gli ':'I '):/^[aeiou]/.test(head)?'L’':feminine.has(head)||(head==='componente'&&/liquida/.test(label))?'La ':/^(?:s[^aeiou]|z)/.test(head)?'Lo ':'Il ';
+   if(verb)forms.push(`${article}${label} che ${body.slice(verb.index)} ${plural?'sono':'è'} ${v}.`);
+   forms.push(`${plural?'Sono':'È'} ${v}.`);
+   if(!verb)forms.push(`La denominazione è ${v}.`);
+  }
+ }
 
-function fresh(start=Date.parse('2026-11-09T10:30:00+01:00')){const draw=drawQuestions(),questions=draw.map(x=>x.q),joins=[85,63,38,0].sort(()=>Math.random()-.5).map(s=>start-600000-s*1000);return{v:2,runId:Date.now().toString(36)+'-'+rand(10000,99999),started:false,start,joins,paused:null,sound:true,questions,questionIds:draw.map(x=>x.id),answers:makeAnswers(questions),audit:[],auditSeen:{}}}
+ const unique=new Map();for(const f of forms){if(!banned.test(f)&&!unique.has(norm(f)))unique.set(norm(f),f)}return [...unique.values()];
+}
+function naturalForms(q){return [...formalForms(q,true),...q.slice(1,4)]}
+function makeAnswers(questions){
+ const n=questions.length,limits=[[.70,.80],[.87,.97],[.50,.67],[.42,.63]];
+ const counts=limits.map(([lo,hi])=>rand(Math.ceil(n*lo),Math.floor(n*hi)));
+ const correctSets=counts.map(count=>new Set(shuffled(questions.map((_,j)=>j)).slice(0,count)));
+ return questions.map((q,j)=>{const used=new Set();return names.map((_,i)=>{
+  const good=correctSets[i].has(j),pool=shuffled(formalForms(q,good));
+  const text=pool.find(x=>!used.has(norm(x))||/^\d+[.,]?$/.test(x))??pool[0];used.add(norm(text));
+  return{text,correct:good,delay:rand(28000+i*6000,145000+i*11000),missing:!good&&Math.random()<.12,edited:false,override:null,grade:null};
+ })});
+}
+
+function fresh(start=Date.parse('2026-11-09T10:30:00+01:00')){const draw=drawQuestions(),questions=draw.map(x=>x.q),joins=[85,63,38,0].sort(()=>Math.random()-.5).map(s=>start-600000-s*1000);return{v:2,runId:Date.now().toString(36)+'-'+rand(10000,99999),answerStyleVersion:1,started:false,start,joins,paused:null,sound:true,questions,questionIds:draw.map(x=>x.id),answers:makeAnswers(questions),audit:[],auditSeen:{}}}
 let state;try{state=JSON.parse(localStorage.getItem(KEY));if(state?.v!==2)state=fresh()}catch{state=fresh()}
 Q=state.questions??LEGACY_Q;state.questions=Q;state.questionIds??=Q.map((_,i)=>'legacy-'+i);state.runId??=Date.now().toString(36)+'-'+rand(10000,99999);state.started??=(state.paused??Date.now())>=state.start;
 let logged=false;try{logged=sessionStorage.getItem(AUTH)==='yes'}catch{}
@@ -76,7 +126,11 @@ function eventDate(){return new Date(state.start).toLocaleString('it-IT',DATE_FO
 function unlockSound(){try{ctx??=new(window.AudioContext||window.webkitAudioContext)();if(ctx.state==='suspended')ctx.resume().catch(()=>{})}catch{}}
 function chime(){if(!state.sound||!ctx||ctx.state!=='running')return;try{const t=ctx.currentTime;[740,1110].forEach((hz,i)=>{const o=ctx.createOscillator(),g=ctx.createGain(),at=t+i*.11;o.type='sine';o.frequency.value=hz;g.gain.setValueAtTime(0,at);g.gain.linearRampToValueAtTime(.07,at+.012);g.gain.exponentialRampToValueAtTime(.001,at+.16);o.connect(g);g.connect(ctx.destination);o.start(at);o.stop(at+.18)})}catch{}}
 function baselineReceipts(){previousReceipts=new Set();Q.forEach((_,q)=>names.forEach((_,i)=>{if(received(q,i))previousReceipts.add(q+':'+i)}))}
-state.answers.forEach((arr,q)=>{const used=new Set();arr.forEach(a=>{if(a.edited&&a.override)a.override=a.override.replace(/^Indico:\s*/i,'');if(/^Indico:\s*/i.test(a.text)){const reserved=new Set(arr.filter(other=>other!==a).map(other=>norm(other.edited?other.override:other.text)));a.text=naturalForms(Q[q]).find(x=>!reserved.has(norm(x))&&!used.has(norm(x)))??Q[q][1];}used.add(norm(a.edited?a.override:a.text))})});
+if(state.answerStyleVersion!==1){
+ state.answers.forEach((arr,q)=>{const used=new Set(arr.filter(a=>a.edited).map(a=>norm(a.override||'')));arr.forEach(a=>{if(a.edited)return;const pool=shuffled(formalForms(Q[q],a.correct));a.text=pool.find(x=>!used.has(norm(x))||/^\d+[.,]?$/.test(x))??pool[0];used.add(norm(a.text))})});
+ state.answerStyleVersion=1;
+}
+
 baselineReceipts();
 function checkReceipts(){let sound=false;Q.forEach((_,q)=>names.forEach((_,i)=>{const k=q+':'+i;if(received(q,i)&&!previousReceipts.has(k)){if(logged&&phase()==='running'&&!state.paused&&q===current()&&!state.answers[q][i].edited)sound=true;previousReceipts.add(k)}}));if(sound)chime()}
 let exportDirectory=null,exportChain=Promise.resolve(),exportLabel='',exportPending=0;
@@ -164,6 +218,7 @@ $('#modal').addEventListener('close',()=>settingsAuth=false);window.addEventList
 save();render();restoreDirectory();setInterval(render,500);
 
 })();
+
 
 
 
