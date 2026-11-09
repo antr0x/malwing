@@ -23,3 +23,6 @@
 #next{display:inline-flex;align-items:center;justify-content:flex-end;gap:10px;flex-wrap:wrap}.answer-countdown{font-size:20px;font-weight:700;color:var(--purple);font-variant-numeric:tabular-nums;letter-spacing:.5px;line-height:1.25;background:#f3f1fc;border-radius:7px;padding:5px 9px}@media(max-width:560px){.question>.row{gap:12px;flex-wrap:wrap}.answer-countdown{font-size:19px}}
 
 .login-card input:disabled{background:#eceef3;color:#9299a5;cursor:not-allowed;border-color:#dfe3ea}.login-card button:disabled,.rules-control button:disabled{cursor:not-allowed}
+
+
+.cards{grid-template-columns:repeat(3,minmax(0,1fr))}.resumption-notice{font-size:13px;line-height:1.85;color:#697487;border-left:3px solid #b2a9eb;padding:4px 0 4px 15px;margin:16px 0 20px;max-width:480px}@media(max-width:900px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.cards{grid-template-columns:1fr}}
